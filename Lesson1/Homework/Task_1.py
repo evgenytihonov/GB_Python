@@ -28,5 +28,7 @@ check = bool(input('У тебя есть права (True/False)? '))
 
 if check == True and age >= 18:
     print('Молодчик!')
+elif check == False and age >= 18:
+    print('Нужная штука!')
 else:
     print('Не может быть такого!!!')
