@@ -17,9 +17,9 @@
 a = abs(int(input("Введите результаты пробежки первого дня в км: ")))
 b = abs(int(input("Введите общий желаемый результат в км: ")))
 counter = 1
-
+print(f'{counter}-й день: {a:.2f}')
 while a < b:
-        a += 0.1 * a
+        a += round(0.1 * a, 2)
         counter += 1
-
+        print(f'{counter}-й день: {a:.2f}')
 print(f"Вы достигнете требуемых показателей за {counter} дней")
