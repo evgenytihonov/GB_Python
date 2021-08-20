@@ -4,7 +4,7 @@
 print('Задание 1')
 
 username = input('Введи имя: ')
-age = int(input('Введи возраст: '))
+age = abs(int(input('Введи возраст: ')))
 
 print(f'\nЗдравствуйте, {username}.\n')
 
@@ -13,7 +13,7 @@ if age <= 18:
 else:
     print(f'{age}!!! Офигеть, жизнь подходит к концу, поторопись!')
 
-height = float(input('Введи рост в метрах: '))
+height = abs(float(input('Введи рост в метрах: ')))
 
 if height >= 1.6 and age > 22:
     print(f'\nПоздравляю, {username}, видимо, ты ел достаточно каши! {age}, как никак!\n')
@@ -24,7 +24,7 @@ elif age <= 22:
 else:
     print(f'{username} {age} полных отроду, {height}м.... генетику не выбирают')
 
-check = bool(input('У тебя есть права? '))
+check = bool(input('У тебя есть права (True/False)? '))
 
 if check == True and age >= 18:
     print('Молодчик!')
